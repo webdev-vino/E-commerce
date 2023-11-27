@@ -1,0 +1,90 @@
+
+
+.list {
+    height: 90vh;
+    width: 90vw;
+    margin-left: 4.5rem;
+}
+
+.list-img {
+    position: relative;
+    height: 100%;
+    width: 20%;
+    padding-right: 10px;
+    border-right: 1rem solid rgb(255, 255, 255);
+    border-left: 1rem solid rgb(255, 255, 255);
+    margin-top: 2rem;
+    overflow: hidden;
+    
+}
+.list-img:hover .hover-icon {
+   left: 0;
+}
+
+.hover-icon {
+    position: absolute;
+    top: 1rem; 
+    left: -7rem;
+    width: 7rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5); 
+    transition: left 0.3s ease; 
+    border-style: none;
+    outline: none;
+    color: white;
+    background-color: rgb(19, 236, 160);
+}
+.hover-icon:hover {
+    background-color: rgb(23, 218, 166);
+}
+.list-img i {
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+    font-size: 1.5rem;
+    color: rgb(0, 255, 128);
+    display: none;
+}
+
+.list-img i:hover {
+    color: red;
+}
+
+.list-img:hover  i{
+    display: block ;
+
+
+}
+.list h2 {
+    text-align: center;
+    margin: 6rem 0 2rem 0;
+}
+
+.list-img img {
+    height: 100%;
+    width: 100%;
+    background-color: #e9ecef;
+    padding: 7rem 1rem;
+
+}
+
+.slick-next::before, .slick-prev::before {
+    color: black !important ;
+    font-size: 1.5rem !important;
+}
+.slick-prev::before {
+    margin-right: 1rem !important;
+}
+
+.name {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0 0 0;
+}
+
+.name p:last-child {
+    color: rgb(30, 255, 0);
+}

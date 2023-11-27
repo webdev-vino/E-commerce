@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu&display=swap");
+
+.footer {
+  height: 70vh;
+  background-color: #e9ecef;
+}
+
+table {
+  line-height: 3;
+  width: 90%;
+  padding: 6rem 0 0 0;
+  font-size: 1rem;
+  font-family: "Ubuntu", sans-serif;
+  margin: 0 0 0 5rem;
+}
+
+td,
+th {
+  text-align: left;
+  width: 10rem;
+}
+
+td {
+  color: gray;
+}
+
+.rights {
+  height: 10rem;
+  text-align: center;
+  padding-top: 9rem;
+  color: gray;
+}

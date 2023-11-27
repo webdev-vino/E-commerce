@@ -1,0 +1,152 @@
+.homepage {
+  height: 110vh;
+  width: 100%;
+}
+
+.shoe {
+  height: 110vh;
+  width: 100%;
+  background: linear-gradient(177.5deg, transparent 80%, rgb(255, 255, 255) 80%),
+    linear-gradient(174deg, transparent 70%, rgb(212, 210, 203) 70%),
+    url(/public/images/black.jpeg);
+  background-size: 100% 100%, 100% 100%, cover;
+  background-repeat: no-repeat;
+  position: relative;
+
+}
+
+.shoe .background-circle { 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 35rem;
+  height: 35rem;
+  background-color: rgb(255, 170, 0);
+  border-radius: 50%;
+}
+.shoe img {
+  position: relative;
+  bottom: 5%;
+  left: 50%;
+  height: 50rem;
+  transform: translateX(-50%);
+  object-fit: cover;
+}
+
+.shoe > * {
+  color: white;
+}
+.shoe h1 {
+  position: absolute;
+  left: 15%;
+  top: 20%;
+}
+
+.shoe p {
+  position: absolute;
+  right: 20%;
+  top: 20%;
+  font-size: 2rem;
+  letter-spacing: 10px;
+  color: rgb(0, 255, 174);
+}
+
+.shoe pre {
+  position: relative;
+  top: 40%;
+  left: 66%;
+  padding: 15px 70px;
+  background-color: black;
+  width: 10rem;
+  font-size: 1.1rem;
+  z-index: 1;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 80%;
+    width: auto;
+    padding: 12px 20px;
+    margin-left: 9rem;
+    color: white;
+    background-color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 3px;
+    user-select: none;
+    border-style:none;
+    outline: none;
+    
+  }
+
+  .next {
+    left: 5rem;
+    border-radius: 3px 0 0 3px;
+  }
+  
+.prev:hover, .next:hover {
+    color: black;
+    background-color: white;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+  .page {
+    display: none;
+  }
+  
+  .page.active {
+    display: block;
+  }
+  
+
+  @media only screen and (max-width: 320px) {
+    /* Your styles for screens with a maximum width of 320 pixels go here */
+  
+    .homepage {
+      height: 30vh; /* Adjust the height as needed for smaller screens */
+    }
+  
+    .shoe {
+      height: auto;
+    }
+  
+    .shoe img {
+      height: 50%; /* Make the image fill its container */
+    }
+  
+    .shoe h1 {
+      left: 10%; /* Adjust the position of h1 for better visibility */
+    }
+  
+    .shoe p {
+      right: 10%; /* Adjust the position of p for better visibility */
+      font-size: 1.5rem; /* Adjust font size for better readability */
+    }
+  
+    .shoe pre {
+      left: 50%; /* Center the pre element horizontally */
+      transform: translateX(-50%);
+    }
+  
+    .prev,
+    .next {
+      top: auto; /* Adjust the position of the buttons */
+      bottom: 10px; /* Add some space from the bottom */
+      margin-left: 0; /* Remove the left margin */
+      right: 10px; /* Adjust the position of the next button */
+      left: auto; /* Adjust the position of the prev button */
+    }
+  }
+  
